@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<head>
+    <title>MAC ID Login</title>
+
+</script>
+<!-- stylesheet section -->
+<link href="css/mcmaster.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/mcmaster_menu.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/mcmaster_format.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/common/mcmaster_content_styles.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/lytebox.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/site.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/site_mobile.css" rel="stylesheet" type="text/css" media="handheld" />
+<link href="css/mcmaster_print.css" rel="stylesheet" type="text/css" media="print" />
+<link href="css/mcmaster_format_print.css" rel="stylesheet" type="text/css" media="print" />
+<link href="css/site_print.css" rel="stylesheet" type="text/css" media="print" />
+    <style type="text/css">
+        #top_tools {
+           display:none;
+       }
+
+       #menuwrap {
+           display:none;
+       }
+
+       #menuwrap {
+           display:none;
+       }
+
+       #left_nav_tools {
+           display:none;    
+       }
+
+       #banner {
+           display:none;    
+       }
+
+   </style>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <!-- This is the skip link itself, ideally placed right at the start of the page --> 
+        <div id="skiplinkholder"><p><a id="skiplink" href="#skiptarget">Skip to main content (Press Enter).</a></p></div> 
+        <!-- End of the skip link --> 
+        <!-- This is the skip link to reach the navigation content -->
+        <div id="skipnavlinkholder"><p><a id="skipnavlink" href="#skipnavtarget">Skip to navigation content (Press Enter).</a></p></div>
+        <!-- End of the nav skip link -->
+
+        <div id="container">
+
+            <!-- HEADER BEGINS -->
+            <div id="top_container">
+                <h1 id="logo" onClick="window.location.href = 'http://www.mcmaster.ca/home.cfm';"><a href="http://www.mcmaster.ca/home.cfm">McMaster University</a><span></span></h1>
+                <div id="top_tools">
+                    <div class="left_tools">    
+                        <div id="mugsi">
+                            <!--[if lte IE 6]><table><tr><td align="left"><![endif]-->
+                            <a href="https://adweb.cis.mcmaster.ca/cis/ahtml/login.htm" target="_blank">MUGSI</a>
+                            <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                        </div>
+
+                        <div id="staff_dir">
+                            <!--[if lte IE 6]><table><tr><td align="left"><![endif]-->
+                            <a href="http://telecom.mcmaster.ca/directory.cfm" target="_blank">Faculty &amp; Staff Directory</a>
+                            <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                        </div> </div>
+
+                        <div class="right_tools">       
+                            <div id="quick_links">
+                                <!--[if lte IE 6]><table><tr><td><![endif]-->
+                                <form name="form1" action="#" method="post" onSubmit="return false;" style="display:inline;">
+                                    <label for="quicklinks">Quick Links</label>
+                                    <select name="quick_links" id="quicklinks">
+                                        <option value="#" selected="selected">Select</option>
+                                        <option value="http://www.mcmaster.ca/opr/html/a_z/main/a_z_index.html">A to Z Campus Index</option>
+                                        <option value="http://www.mcmaster.ca/ua/alumni/">Alumni Association</option>
+                                        <option value="http://www-athrec.mcmaster.ca/" >Athletics &amp; Recreation</option>
+                                        <option value="http://www.bookstore.mcmaster.ca/">Bookstore</option>
+
+                                        <option value="http://www.mcmaster.ca/health/">Campus Health Centre</option>
+                                        <option value="http://www.mcmaster.ca/services/career.cfm">Career Services</option>
+                                        <option value="http://www.mcmaster.ca/services/clubs.cfm">Clubs</option>
+                                        <option value="http://www.mcmaster.ca/welcome/findus.cfm" >Directions &amp; Map</option>
+                                        <option value="http://www.mcmaster.ca/services/career.cfm" >Employers</option>
+
+                                        <option value="http://telecom.mcmaster.ca/directory.cfm" >Faculty &amp; staff Directory</option>
+                                        <option value="http://sfas.mcmaster.ca/">Financial Aid</option>
+                                        <option value="http://www.mcmaster.ca/search1/">Find People @ McMaster</option>
+                                        <option value="http://www.mcmaster.ca/ua/alumni/giving/" >Giving to McMaster</option>
+                                        <option value="http://www.mcmaster.ca/services/houshosp.cfm">Housing</option>
+
+                                        <option value="http://www.mcmaster.ca/student/international.cfm" >International Students</option>
+                                        <option value="http://library.mcmaster.ca/">Libraries</option>
+                                        <option value="http://www.mcmaster.ca/opr/html/opr/media/main/media.html" >Media</option>
+                                        <option value="https://adweb.cis.mcmaster.ca/cis/ahtml/login.htm">MUGSI Login</option>
+                                        <option value="http://www.mcmaster.ca/policy/">Policies</option>
+                                        <option value="http://www.mcmaster.ca/security/">Security Services</option>
+
+                                        <option value="http://www.mcmaster.ca/bms/student/index.htm">Student Accounts</option>
+                                        <option value="http://oisa.mcmaster.ca/">Work/Study Abroad</option>
+                                        <option value="http://www.workingatmcmaster.ca/" >Working@McMaster</option>
+                                    </select>
+                                    <input type="image" name="qlsubmit" src="/images/go.gif" onClick="jumpMenu();" alt="GO" />
+                                </form>
+                                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                            </div>
+
+                            <form id="searchbox" name="search_form" action="search_results.html">
+                                <div id="searchbox_input">
+                                    <input type="hidden" name="cx" value="017110053273856412988:akq6v26t6nm" />
+                                    <label for="q">Search</label>
+                                    <input name="q" id="q" type="text" class="searchbox_text" />
+                                    <input type="image" name="sa" src="/images/go.gif" alt="GO" />
+                                    <input type="hidden" name="cof" value="FORID:11" />
+                                </div>
+
+                                <div id="searchbox_area_container" style="display:none">
+                                    <fieldset id="searchbox_area">
+                                        <legend>Scope of Search</legend>
+                                        <input id="searchbox_area1" type="radio"  name="hq" value="inurl:mcmaster.ca" checked="checked" /> 
+                                        <label id="searchbox_area1_label" for="searchbox_area1">McMaster</label>
+                                        <input id="searchbox_area2" type="radio"  name="hq" value="inurl:subdomain.mcmaster.ca"  /> 
+                                        <label id="searchbox_area2_label" for="searchbox_area2">Subdomain</label>
+                                        <input id="searchbox_area3" type="radio"  name="hq" value="inurl:subdomain.mcmaster.ca/folder" /> 
+                                        <label id="searchbox_area3_label" for="searchbox_area3">Folder</label>
+                                    </fieldset>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div><!-- #BeginLibraryItem "/Library/mcmaster_custom_menu.lbi" --><div id="menuwrap">
+                    <div>
+                        <ul class="sf-menu">    
+                            <li><a class="menutop" href="http://www.mcmaster.ca/home.cfm">McMaster
+                                <!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                                <ul>
+                                    <li><a href="http://www.mcmaster.ca/opr/html/a_z/main/a_z_index.html">McMaster A-Z Index</a></li>
+                                </ul>
+                                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                            </li>
+                            <li><a class="menutop" href="http://www.mcmaster.ca/opr/html/academics/main/academics.html">Academics
+                                <!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                                <ul>
+                                    <li><a href="http://www.mcmaster.ca/student/undergrd.cfm">Undergraduate Studies/Programs</a></li>
+                                    <li><a href="http://www.mcmaster.ca/graduate/">Graduate Studies/Programs</a></li>
+                                    <li><a href="http://www.mcmaster.ca/student/ptconed.cfm">Part-Time Studies &amp; Continuing Education</a></li>
+                                    <li><a href="http://www.mcmaster.ca/academic/faculties.cfm">Departments &amp; Faculties</a></li>
+                                </ul>
+                                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                            </li>
+                            <li><a class="menutop" href="http://www.mcmaster.ca/ua/alumni/index.html">Alumni
+                                <!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                                <ul>
+                                    <li><a href="http://www.mcmaster.ca/ua/alumni/about.html">About the Alumni Association</a></li>
+                                    <li><a href="http://www.mcmaster.ca/ua/alumni/programs_events.html">Alumni Events</a></li>
+                                    <li><a href="http://www.mcmaster.ca/ua/alumni/services.html">Services &amp; Benefits</a></li>
+                                    <li><a href="http://www.mcmaster.ca/ua/alumni/programs.html">Programs for Alumni</a></li>
+                                    <li><a href="http://www.mcmaster.ca/ua/alumni/networking.html">Alumni Networking</a></li>
+                                    <li><a href="http://www.mcmaster.ca/ua/alumni/keepintouch.html">Keep in Touch</a></li>
+                                    <li><a href="http://www.mcmaster.ca/ua/alumni/homecoming.html">Homecoming</a></li>
+                                    <li><a href="http://www.mcmaster.ca/ua/alumni/weekend.html">Alumni Weekend</a></li>
+                                    <li><a href="http://www.mcmaster.ca/ua/alumni/students.html">Students &amp; Young Alumni</a></li>
+                                    <li><a href="http://www.mcmaster.ca/ua/alumni/giving.html">Giving to McMaster</a></li>
+                                </ul>
+                                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                            </li>
+                            <li><a class="menutop" href="http://www.mcmaster.ca/opr/html/opr/our_campus/main/our_campus.html">Discover McMaster
+                                <!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                                <ul>
+                                    <li><a href="http://www.mcmaster.ca/opr/html/opr/our_campus/main/our_campus.html">About the Campus</a></li>
+                                    <li><a href="http://www.mcmaster.ca/opr/html/opr/fast_facts/main/fast_facts.html">Fast Facts</a></li>
+                                    <li><a href="http://www.mcmaster.ca/welcome/govern.cfm">Governance</a></li>
+                                    <li><a href="http://www.mcmaster.ca/welcome/history.cfm">History of McMaster</a></li>
+                                    <li><a href="http://www.mcmaster.ca/welcome/findus.cfm">How to Get to McMaster</a></li>
+                                    <li><a href="http://www.mcmaster.ca/policy/">Policies, Procedures &amp; Guidelines</a></li>
+                                    <li><a href="http://www.mcmaster.ca/opr/html/discover_mcmaster/presidents_message/discover_mcmaster_presidentsmessage.html">President's Message</a></li>
+                                    <li><a href="http://www.mcmaster.ca/vpacademic/">Provost &amp; Vice-President (Academic)</a></li>
+                                    <li><a href="http://www.mcmaster.ca/opr/html/discover_mcmaster/presidents_message/directions.html">Strategic Plan</a></li>
+                                    <li><a href="http://www.mcmaster.ca/cll/inquiry/index.htm">Teaching and Learning at McMaster</a></li>
+                                </ul>
+                                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                            </li>
+
+                            <li><a class="menutop" href="http://registrar.mcmaster.ca/external/index.htm">Future Students
+                                <!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                                <ul>
+                                    <li><a href="http://registrar.mcmaster.ca/external/index.htm">Undergraduate</a></li>
+                                    <li><a href="http://www.mcmaster.ca/graduate/">Graduate Studies</a></li>
+                                    <li><a href="http://www.degroote.mcmaster.ca/MBA/">MBA Program</a></li>
+                                    <li><a href="http://execed.degroote.mcmaster.ca/">Executive Education</a></li>
+                                    <li><a href="http://www.mcmaster.ca/conted/">Continuing Education</a></li>
+                                    <li><a href="http://studentaffairs.mcmaster.ca/parents/">Parents</a></li>
+                                    <li><a href="http://studentaffairs.mcmaster.ca/">Student Services</a></li>
+                                    <li><a href="http://registrar.mcmaster.ca/virtual/">Virtual Tour</a></li>
+                                </ul>
+                                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                            </li>
+
+                            <li><a class="menutop" href="http://library.mcmaster.ca/">Library
+                                <!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                                <ul>
+                                    <li><a href="http://library.mcmaster.ca/about/">About the Libraries</a></li>
+                                    <li><a href="http://library.mcmaster.ca/justask/">Contact Us</a></li>
+                                    <li><a href="http://library.mcmaster.ca/course-reserves/">Course Reserves</a></li>
+                                    <li><a href="http://library.mcmaster.ca/catalogue/">Library Catalogue</a></li>
+                                    <li><a href="http://library.mcmaster.ca/using-the-libraries/">Library Services</a></li>
+                                    <li><a href="http://library.mcmaster.ca/catalogue/account/">My Account / Book Renewal</a></li>
+                                </ul>
+                                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                            </li>
+                            <li><a class="menutop" href="http://www.mcmaster.ca/research/">Research
+                                <!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                                <ul>
+                                    <li><a href="http://www.mcmaster.ca/research/chairs1.htm">Canada Research Chairs</a></li>
+                                    <li><a href="http://www.mcmaster.ca/research/chairs_end&amp;ind.htm">Endowed &amp; Industrial Chairs</a></li>
+                                    <li><a href="http://www.mcmaster.ca/ors/ethics/rebs.htm">Ethics in Human Research</a></li>
+                                    <li><a href="http://www.mcmaster.ca/research/mip.htm">McMaster Innovation Park</a></li>
+                                    <li><a href="http://www.mcmaster.ca/oia/">Office of International Affairs</a></li>
+
+                                    <li><a href="http://ip.mcmaster.ca/">Partnership Opportunities</a></li>
+                                    <li><a href="http://www.mcmaster.ca/research/centres/centres-ac.htm">Research Centres &amp; Institutes</a></li>
+                                    <li><a href="http://www.mcmaster.ca/policy/research.htm">Research Policies &amp; Procedures</a></li>
+                                    <li><a href="http://www.mcmaster.ca/research/ScienceintheCity.htm">Science in the City</a></li>
+                                </ul>
+                                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                            </li>
+
+                            <li><a class="menutop" href="http://registrar.mcmaster.ca/students/">Current Students
+                                <!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                                <ul>
+                                    <li><a href="http://studentaffairs.mcmaster.ca">Student Affairs</a></li>
+                                    <li><a class="drop" href="#">Student Resources
+                                        <!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+
+                                        <ul class="left">
+                                            <li><a href="http://www.mcmaster.ca/chaplain/">Chaplaincy</a></li>
+                                            <li><a href="http://www.mcmaster.ca/hres/homepage.html">Human Rights &amp; Equity</a></li>
+                                            <li><a href="http://www.mcmaster.ca/uts/">Information Technology</a></li>
+                                            <li><a href="http://www.mcmaster.ca/academicintegrity/">Office of Academic Integrity </a></li>
+                                            <li><a href="http://www.mcmaster.ca/ombuds/">Ombuds </a></li>
+
+                                            <li><a href="http://parking.mcmaster.ca/">Parking &amp; Transit</a></li>
+                                            <li><a href="http://registrar.mcmaster.ca/INTERNAL/index.htm">Registrar </a></li>
+                                            <li><a href="http://www.mcmaster.ca/security/about.htm">Safety &amp; Security</a></li>
+                                            <li><a href="http://sfas.mcmaster.ca">Student Financial Aid &amp; Scholarships</a></li>
+
+                                            <li><a href="http://www.mcmaster.ca/bms/finance/student/studentfinancial.htm" >Student Accounts</a></li>
+                                        </ul>
+                                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                                    </li>
+                                    <li><a class="drop" href="#">Student Government
+                                        <!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                                        <ul class="left">
+                                            <li><a href="http://www.mcmaster.ca/gsa/">Graduate Students</a></li>
+                                            <li><a href="http://www.mcmaster.ca/maps/index.html">Part-time Students </a></li>
+                                            <li><a href="http://www.msu.mcmaster.ca/">McMaster Students Union </a></li>
+                                        </ul>  
+                                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                                    </li>
+                                    <li><a class="drop" href="#">Campus Life
+                                        <!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]-->
+                                        <ul class="left">
+                                            <li><a href="http://www.mcmaster.ca/services/clubs.cfm">Clubs</a></li>
+                                            <li><a href="http://dailynews.mcmaster.ca/Event_Calendar/Events/">Events</a></li>
+                                        </ul>
+                                        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                                    </li>
+                                </ul>
+                                <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- #EndLibraryItem --></div>
+<!-- END top_container
+
+    START main_container -->
+    <div id="main_container">
+      <!-- START left_container -->
+      <div id="left_container">
+
+       <!-- This is the skip nav target. This should be placed directly before where you want the keyboard focus to be moved to. --> 
+       <p id="skipnavtargetholder"><a id="skipnavtarget" name="skipnavtarget" class="skip" tabindex="-1"></a></p> 
+       <!-- End of skip nav target --> 
+       <!--[if lte IE 6]><table align="left" margin="0" cellspacing="0" cellpadding="0"><tr><td><![endif]--><div id="left_nav">
+       <h1 class="left_nav_title"><a href="#">MAC ID Login</a></h1>
+       <ul id="submenu">
+        <li><a href="http://mcmaster.ca/uts/servicecatalog/users_passwd.html?section=0" target="_blank">What is MAC ID?</a></li>
+        <li><a href="http://www.mcmaster.ca/uts/macid/FAQ.html" target="_blank">MAC ID FAQs</a></li>
+        <li><a href="http://www.mcmaster.ca/uts/uts_servdesk.html" target="_blank">Finding Help</a></li>
+    </ul>
+</div>
+<script type="text/javascript">initializeNavTree("submenu");</script><div id="left_nav_content"> </div>
+
+<div id="left_nav_tools" class="left_nav_custom">
+    <ul>
+        <li class="font_increment"><a href="#" onClick="javascript:text_resize('bottom_content',1); return false;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('999','','/images/plus_over.gif',1); Tip('Increase size of text')"><img src="/images/plus_out.gif" alt="Increase text size" name="larger_text" width="10" height="10" border="0" /> Larger Text</a></li>
+        <li class="font_decrement"><a href="#" onClick="javascript:text_resize('bottom_content',-1); return false;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('999','','/images/minus_over.gif',1); Tip('Decrease size of text')"><img src="h/images/minus_out.gif" alt="Decrease text size" name="smaller_text" width="10" height="10" border="0" /> Smaller Text</a></li>
+    </ul>
+</div>
+
+<!--[if lte IE 6]></td></tr></table><![endif]-->
+</div>
+<!-- END left_container -->
+<!-- This is the skip target. This should be placed directly before where you want the keyboard focus to be moved to. Usually this is directly before the main page content --> 
+<p id="skiptargetholder"><a id="skiptarget" name="skiptarget" class="skip" tabindex="-1"></a></p> 
+<!-- End of skip target -->
+<div id="main_content">
+    <!--[if lte IE 6]><table align="left" margin="0" cellspacing="0" cellpadding="0"><tr><td><![endif]-->
+    
+    <div id="format_2">
+
+        <div id="top_content"> <img id="banner" src="/images/image1.jpg" width="776" height="287" alt="McMaster University" />
+            <h1 class="content_title1">MAC ID Login</h1>    
+        </div>
+        
+        <div id="bottom_content">
+<!--[if lt IE 8]>
+<table id="hiddenTable"  border="0" align="center" style="width:100%;margin:0;padding:0;"><tr><td style="background-color:#990033;border:0;margin:0;">
+    <![endif]-->
+    <div id="hiddenPageTitle"><h2>MAC ID Login</h2></div>
+<!--[if lt IE 8]>
+</td></tr></table>  
+<![endif]-->
+
+<form action="mcauth" method="post" name="MACID_Login" id="macidloginform" class="well form-horizontal"
+        v-on:submit.prevent="verifyUsers">
+
+    <p id="macidlog"><strong>MAC ID Login:</strong> Please log in using your Mac ID and password.</p>
+
+    <input name="app_id" type="hidden" value="1389" />
+    <input name="SAMLRequest" type="hidden" value="" />
+    <input name="user_type" type="hidden" value="ad" />
+
+    <div class="control-group">              
+  <!--[if lt IE 7]> 
+<table width="100%" class="ietable" border="0">
+  <tr>
+    <td align="right" style="width:30%;">
+        <![endif]-->     
+        <label class="control-label" for="user_id">MAC ID:</label>    
+        <div class="controls">
+          <input name="user_id" type="text" class="input focused" id="user_id" tabindex="1" v-model="userInputName"  />
+      </div>     
+</div> 
+
+
+<div class="control-group">              
+        <label class="control-label" for="pin">Password:</label>   
+        <div class="controls">
+            <input name="pin" type="password" class="input" id="pin" tabindex="2" v-model="userInputPassword"/>
+        </div>     
+</div>          
+        <div id="submit-btn">
+          <button tabindex="3" name="submit" id="submit" type="submit" class="btn" v-on:click="verifyUsers()">Submit</button>
+      </div>   
+
+</form>
+
+<div id="PrivacyPolicy">
+    <p><strong>Privacy Policy:</strong> Personal information such as, but not limited to, your full name 
+        and program of study may be shared with the web site you are logging into for administrative purposes such as authorization and 
+        service provisioning. By logging into this site you accept that some personal information may be shared with the website. For 
+        further information please refer to the Statement on Collection of <a href="http://www.mcmaster.ca/univsec/fippa/FIPPA_Statement.pdf" title="FIPPA">Personal Information and Protection of Privacy.</a></p></div>
+
+        <h2 id="hiddenPageFooter">&copy; <script type="text/javascript">var d = new Date(); document.write(d.getFullYear() + " ");</script> McMaster University</h2>             
+    </div>
+</div>
+
+<!--[if lte IE 6]></td></tr></table><![endif]-->
+</div>
+<!-- END main_container -->
+</div>
+<div id="footer">
+    &copy; <script type="text/javascript">var d = new Date(); document.write(d.getFullYear() + " ");</script>
+    McMaster University
+    <span class="vertical_separator">|</span>
+    1280 Main Street West
+    <span class="vertical_separator">|</span>
+    Hamilton, Ontario L8S4L8
+    <span class="vertical_separator">|</span>
+    905-525-9140
+    <span class="vertical_separator">|</span>
+    <a href="http://www.mcmaster.ca/opr/html/opr/contact_us/main/contact_us.html">Contact Us</a>
+    <span class="vertical_separator">|</span>
+    <a href="http://www.mcmaster.ca/opr/html/footer/main/terms_of_use.html">Terms of Use &amp; Privacy Policy</a><br />
+    <br />
+    <p align="center">
+        <script type="text/javascript">
+        </script>
+    </p>
+</div>
+</div>
+<!-- END container -->
+
+
+</div>
+
+</body>
+
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="helper.js"></script>
+
+</html>
+
+

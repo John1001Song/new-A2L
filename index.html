@@ -1,0 +1,168 @@
+<html>
+
+<head>
+	<title>Avenue to Learn - McMaster University</title>
+	<link href="layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<!-- template for the modal component -->
+<script type="text/x-template" id="modal-template">
+	<transition name="modal">
+		<div class="modal-mask">
+			<div class="modal-wrapper">
+				<div class="modal-container">
+
+					<div class="modal-header">
+						<slot name="header">
+							default header
+						</slot>
+					</div>
+
+					<div class="modal-body">
+						<slot name="body">
+							default body
+						</slot>
+					</div>
+
+					<div class="modal-footer">
+						<slot name="footer">
+							default footer
+							<button class="modal-default-button" @click="$emit('close')">
+								OK
+							</button>
+						</slot>
+					</div>
+				</div>
+			</div>
+		</div>
+	</transition>
+</script>
+
+
+<div id="container">
+
+	<div id="avenue_logo"><a href="index.html"><img src="images/avenue_logo.jpg" width="410" height="41" alt="Avenue to Learn logo" /></a></div>
+	<div id="body_wrap">
+		<div id="nav_links">
+			<ul>
+				
+				<!-- if system down, remove comment tags from the following line, put comment tags around the regular login line  -->
+				<!--<li><a href="http://avenue.mcmaster.ca/unavailable.php?id=100" id="login_button" tabindex="1" alt="Login">Login</a> Use your <a href="http://www.mcmaster.ca/uts/email_accounts/macid.html">MacID</a></li>
+			-->
+			
+			<!-- the following line the regular login -->
+			<li>
+				<!-- <button id="show-modal" @click="showModal = true">Show Modal</button> -->
+				<a href="login.html" id="login_button" @click="showModal = ture" tabindex="1" alt="Login">Login</a> Use your <a href="http://www.mcmaster.ca/uts/email_accounts/macid.html">MacID</a>
+				<!-- <modal v-if="showModal" @close="showModal = false"> -->
+			</li>
+			<!-- use the modal component, pass in the prop -->
+			
+			
+
+			<li><div><a href="support.html">Support</a></div></li>
+			<li><div><a href="terms.html">Terms of Use</a></div></li>
+			<li><div><a href="https://avenue.cllmcmaster.ca/d2l/tools/system_check/systemcheck.asp?ou=6605">Browser Check</a></div></li>
+			<li><div><a href="popup.html">Pop-up Blockers</a></div></li>
+		</ul>
+		<div id="maintenance"><strong>Maintenance</strong><br /><br />Sunday December 11th, 2016 between 1:00 AM and 7:00 AM</div>
+	</div>	
+	
+	
+	
+	<div id="corner"><img src="images/corner.gif" alt="decorative corner" width="22" height="7"/></div>		
+
+	<!-- main part of page starts here -->
+	
+	<div id="main">	
+		<div id="main_header"><img src="images/announce_bar.jpg" alt="Announcements" width="686" height="27" /></div>
+		<div id="announcements">
+			
+			<!-- content goes in here -->
+			<!-- wrap any emergency notice in a <div id="downtime"> notice in here </div>   -->	
+			
+			
+			<strong><img src="images/gn_talk_bubble.png" width="28" height="21" alt="new item" />Webex Announcement!</strong><br /><br />
+			<ul>
+				<li>MIIETL is happy to announce WebEx, our new web conferencing tool at McMaster, that has replaced Blackboard Collaborate. WebEx is now available for all faculty/staff at McMaster. Some of you may have already received an account for WebEx. If you have not received an account, and would like to use WebEx, please email us at <a href="mailto:support.webconf@cll.mcmaster.ca">support.webconf@cll.mcmaster.ca</a>.
+				</li> </ul>
+				<hr />	
+
+				<strong>Phishing scam/attack targeted specifically at the Avenue to Learn community</strong><br /><br />
+				<ul>
+					<li>There is an advanced spear-phishing attack ongoing against our community, and they’re using Avenue to Learn as their bait.
+						<br /><br />
+						The attackers have created a site that looks identical to the Avenue login site, and baited users to go there with a password expiry notice.
+						<br /><br />
+						Please note that the Avenue to Learn team does not ever send out emails regarding password resets, and if users are ever unsure, please contact us at <a href="mailto:support.avenue@cll.mcmaster.ca">support.avenue@cll.mcmaster.ca</a> and we'll be happy to respond to any concerns that you may have.
+					</li> </ul>
+					<hr />	
+					
+					<strong>Fall/Winter Course Request Form</strong><br /><br />
+					<ul>
+						<li>The Avenue to Learn course request form is now available for Fall/Winter 2016/2017 Semester. Please make your requests here: <a href="http://avenue.mcmaster.ca/course/course_request_check.php">http://avenue.mcmaster.ca/course/course_request_check.php</a>. Please note that there are changes to copyright policy that have gone into effect as of January 2016, please read the relevant information when making your course request, and if you have any further questions about copyright and Fair Dealing, please visit <a href-="http://copyright.mcmaster.ca" target="_new">http://copyright.mcmaster.ca</a>.
+						</li> </ul>
+						<hr />		
+						
+<!-- <strong><img src="images/gn_talk_bubble.png" width="28" height="21" alt="new item" />Avenue to Learn Instructor/Developer Training and Workshops</strong><br /><br />
+					<ul>
+                      <li>The workshop training schedule has now been posted. For more information and to book a spot, please head on over to <a href="http://avenue.mcmaster.ca/help/form-training.php" target="_new">http://avenue.mcmaster.ca/help/form-training.php</a>.
+<br /><br />
+There are no workshops scheduled for the months of June or July
+but if you would like to get some training during those months, please
+send an email to our support team at <a href="mailto:support.avenue@cll.mcmaster.ca">support.avenue@cll.mcmaster.ca</a> and we'll be happy to arrange a one-on-one session with you.
+</li> </ul>
+ <hr />	
+-->	
+<strong>Digital Badges</strong><br /><br />
+<ul>
+	<li>A new tool will be appearing on Avenue today: Badges. Digital badges are a way to document skills, experiences and achievements. Digital badges are portable through Mozilla's Backpack, and allow the user to combine badges from different sources to better articulate themselves to an audience on almost any digital platform. For more information, please see our <a href="https://wiki.mcmaster.ca/avenue/badges" target="_new">support wiki article on badges</a>.
+		<br /><br />
+		If you are interested in issuing badges in a curricular or co-curricular context, please get in touch with Jon Kruithof, <a href="mailto:kruithj@mcmaster.ca">kruithj@mcmaster.ca</a>
+	</li> </ul>
+	<hr />			
+	
+	
+	
+	<strong>D2L Pulse App</strong><br /><br />
+	<ul>
+		<li>Thanks to modifications to the way you login to Avenue to Learn, we now are pleased to introduce you to D2L's (the company who makes Avenue to Learn) app, Brightspace Pulse. This free app will assist you in keeping on top of your workload, as well as notify you when courses you are enrolled in on Avenue to Learn are updated. To download the iOS version for iPhone users here is the link: <a href="https://itunes.apple.com/ca/app/brightspace-pulse/id1001688546?mt=8" target="_new">https://itunes.apple.com/ca/app/brightspace-pulse/id1001688546?mt=8</a>. For the Android version download it from the Google Play store through this link: <a href="https://play.google.com/store/apps/details?id=com.d2l.brightspace.student.android&hl=en" target="_new">https://play.google.com/store/apps/details?id=com.d2l.brightspace.student.android&hl=en</a>. While we are not the developers of this app, we can provide some basic support around configuring it for use at McMaster. If you have feedback for D2L, feel free to <a href="mailto:support.avenue@cll.mcmaster.ca">put in a ticket</a> and we will pass on that information to D2L. 
+		</li> </ul>
+		<hr />	 
+
+	</div>
+</div>
+</div>
+<div id="foot_wrap">
+	<div id="main_footer"><img src="images/cll_mcmaster.jpg" width="414" height="88" alt="McMaster's Online Teaching and Learning Community supported by the Centre for Teaching and Learning" /></div>
+
+	<div id="text_footer">
+		<br /><br /><hr align="center" />
+		<div align="center">
+			© McMaster University | 1280 Main Street West | Hamilton, Ontario L8S 4L8 | 905-525-9140 </div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ?
+		"https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost +
+		"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-10182999-1");
+			pageTracker._trackPageview();
+		} catch(err) {}
+	</script>
+
+
+</body> 
+
+
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="helper.js"></script>
+</html>

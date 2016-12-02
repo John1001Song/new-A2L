@@ -1,0 +1,41 @@
+/* CSS Print Document for FHS website */
+div#print_side_bar {
+	display:none;
+}
+
+div#page_links {
+	display:none;
+	padding-top:0px;
+	margin-bottom:0px;
+}
+
+.page_links {
+	display:none;
+	padding-top:0px;
+	margin-bottom:0px;
+}
+
+.image_box {
+	border:1px solid #000000;
+	background-color:#999999;
+}
+
+.image_box img {
+	border-bottom: 1px solid #000000;
+}
+
+div#format_map div#bottom_content {
+	font-size:1em;
+}
+
+.section_text {
+	padding-top: 10px;
+}
+
+a.go_to_top {
+	display:none;
+}
+
+a.go_back {
+	display:none;
+}

@@ -1,0 +1,356 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+/* begin reset  - this clears any HTML default formatting and allows us to ensure a layout that is predictable using the box model */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul{
+	list-style: none;
+} 
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end generic reset */
+
+body{
+line-height: 1;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;
+background-color:#FFFFFF;
+font-family: "Open Sans Condensed", Arial, Helvetica, Verdana, sans-serif;
+}
+
+ /* unvisited link */
+
+a:link {
+color:#000000;
+ text-decoration:underline;
+}
+
+ /* visited link */
+     
+a:visited {
+color:#66666;
+} 
+
+/* selected link */ 
+
+a:active {
+color:#666666;
+}  
+
+/* mouseover link */
+
+a:hover{
+color:#666666;
+ text-decoration:underline;
+}
+
+strong{ 
+font-weight: bold;
+}
+
+#avenue_logo{
+position: relative;
+top: 12px;
+left: 18px;
+height: 44px;
+}
+
+#body_wrap{
+position: relative;
+}
+
+/* nav_links are for the links along the left hand side, z-index set to let the main panel over lap the left navbar */
+/* the left and top positions are absolute to the body wrap box that surrounds them */
+
+#nav_links{
+	background-color: #C6CBCE;
+	position: absolute;
+	left: 0px;
+	top: 27px;
+	height:355px;
+	width: 210px;
+	z-index: 0;
+	padding: 10px 25px 10px 10px;
+	font-size: medium;
+	font-weight: bolder;
+}
+
+/* only navigation links list stylings */
+
+#nav_links li{ 
+padding: 20px 0px 15px 0px;
+border-bottom: #999999 solid;
+border-width: 1px;
+}
+
+/* text only inset */
+
+#nav_links li div{
+font-family: "Open Sans Condensed", Arial, Helvetica, Verdana, sans-serif;
+font-size: larger;
+position: relative;
+left: 25px;
+}
+
+
+#nav_links li a:link {
+color:#000000;
+ text-decoration:none;
+}
+
+ /* visited link */
+     
+	 /* CHANGE THE VISITED COLOR TO HEX VALUE FOR AVENUE LOGO */
+	 
+#nav_links li a:visited {
+color:#666666;
+} 
+
+/* selected link */ 
+
+#nav_links li a:active {
+color:#666666;
+}  
+
+/* mouseover link */
+
+#nav_links li a:hover{
+color:#666666;
+ text-decoration:underline;
+}
+
+#maintenance{
+background-color: #FFFFFF;
+font-size: small;
+position: relative;
+text-align: center;
+left: 2px;
+top: 6px;
+width: 186px;
+height: 66px;
+overflow: auto;
+padding: 5px 10px 5px 10px;
+z-index:2;
+} 
+
+#maintenance strong{ 
+font-family: "Open Sans Condensed", Arial, Helvetica, Verdana, sans-serif;
+color:#990033;
+font-weight: bold;
+font-size: medium;
+}
+
+
+/* for the triangle that is the visual offset */
+
+#corner{
+position: absolute;
+left: 227px;
+top: 27px;
+height: 7px;
+width: 22px;
+z-index: 1;
+}
+
+/* main, main_header, main_footer and announcements make up the main info section, updates go in here */
+
+#main{
+	background-color: #A6AFB6;
+	position: absolute;
+	left: 228px;
+	top: 34px;
+	height: 380px; 
+	width: 722px;
+	z-index: 1;
+}
+
+#main_header{
+position: relative;
+left: 17px;
+top: 18px;
+width: 414px;
+}
+
+#announcements{
+background-color: #FFFFFF;
+font-family: Helvetica, Arial, Verdana, sans-serif;
+font-size: small;
+position: relative;
+left: 17px;
+top: 30px;
+width: 678px;
+height: 302px;
+overflow: auto;
+padding: 5px 5px 5px 5px;
+z-index:2;
+} 
+
+#announcements strong{ 
+font-family: "Open Sans Condensed", Arial, Helvetica, Verdana, sans-serif;
+color:#990033;
+font-weight: bold;
+font-size: medium;
+}
+
+#announcements b{ 
+font-family: Helvetica, Arial, Verdana, sans-serif;
+font-size: small;
+font-weight: bold;
+}
+
+#announcements i{ 
+font-family: Helvetica, Arial, Verdana, sans-serif;
+font-size: small;
+font-style: italic;
+}
+#announcements ul {
+list-style:disc;
+}
+#announcements ul li{
+list-style:disc;
+}
+
+#support {
+text-align:center;
+border-style:solid;
+border-width:0.5px;
+padding: 2px 5px;
+background-color: #CDCDCD;
+
+}
+
+/* the following are all part of the footer - there's a picture in main_footer, text and and hr in text_footer, wrapped in foot_wrap */
+
+#foot_wrap{
+position: relative;
+}
+
+#main_footer{
+	position: absolute;
+	height: 88px;
+	width:  414px;
+	top: 440px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 275px;
+}
+
+#text_footer{
+	position: absolute;
+	top: 509px;
+	width: 960px;
+	font-size: smaller;
+	color: #999999;
+	left: 4px;
+}
+
+
+/* container wrapped around all content, centres the stuff on the page as long as window is > 960px */
+
+#container{
+width: 960px; /*The width of our layout*/
+margin-left: auto;
+margin-right: auto;
+text-align: left; /*Resets the text alignment*/
+}
+
+/* these three are only for the login button */
+
+#login_button {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9) );
+	background:-moz-linear-gradient( center top, #f9f9f9 5%, #e9e9e9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9');
+	background-color:#f9f9f9;
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	border-radius:14px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#666666;
+	font-family:"Open Sans Condensed", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	padding:2px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}
+#login_button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9) );
+	background:-moz-linear-gradient( center top, #e9e9e9 5%, #f9f9f9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9');
+	background-color:#e9e9e9;
+}
+
+#login_button:active {
+	position:relative;
+	top:1px;
+}
+
+/* only used on the popup (in downtime.html) to replace the MacID login when the system is down for maintenance */
+
+#emergency  {
+background-color: #FFFFFF;
+position: relative;
+text-align: center;
+padding: 5px 10px 5px 10px;
+}
+
+/* downtime notice stuff needs to remain at the bottom to overwrite all previous css */
+
+#downtime{
+background-color: #990000;
+color: #FFFFFF;
+}
+
+#downtime strong{
+color:#000000;
+}
+
+#downtime a{
+color:#C6CBCE
+}

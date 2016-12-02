@@ -1,0 +1,729 @@
+/*clear browser settings*/
+
+@import url("/mcauth/css/modernized.css") all;
+
+html, body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset {  
+	margin: 0px; 
+	padding: 0px; 
+	border: none; 
+}
+
+body {
+	background-color:#ffffff;
+	margin-top: 22px;
+	margin-bottom: 0px;
+	margin-left: 16px;
+	margin-right: 16px;
+	text-align: center;
+}
+
+img {
+	border:none;
+}
+
+p {
+	margin-bottom:1em;
+}
+
+a {
+	color:#990033;
+	text-decoration:underline;
+}
+
+a:hover {
+	color:#000000;
+	text-decoration:underline;
+}
+
+h1 {
+	font-size:1.3em;
+	font-weight:bold;
+	color:#990033;
+	margin-bottom:12px;
+}
+
+h1.large {
+	font-size:1.4em;
+}
+
+h2 {
+	font-size:1.1em;
+	font-weight:bold;
+	color:#000000;
+	margin-bottom:12px;
+}
+
+h2.large {
+	font-size:1.3em;
+}
+
+h3 {
+	font-size:1.1em;
+	font-weight:bold;
+/*	color:#2A3B86;*/
+	color:#990033;
+	margin-bottom:12px;
+}
+
+h3.large {
+	font-size:1.3em;
+}
+
+h4 {
+	font-size:1em;
+	font-weight:bold;
+	color:#000000;
+	margin-bottom:10px;
+}
+
+h4.large {
+	font-size:1.2em;
+}
+
+h5 {
+	font-size:.91em;
+	font-weight:bold;
+	color:#000000;
+	margin-bottom:10px;
+}
+
+h6 {
+	font-size:.75em;
+	font-weight:bold;
+	color:#000000;
+	margin-bottom:10px;
+}
+
+hr {
+	color:#CCCCCC;
+	background-color:#CCCCCC;
+	height:1px;
+	border:0px solid #CCCCCC;
+	clear:both;
+}
+
+div#container {
+	position: relative;
+	width: 945px;
+	min-width: 945px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align:left;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+* html div#container {
+	width: 995px;
+	margin-top: 4px;
+	padding-left:12px;
+}
+
+div#main_container {
+    float: left;
+	position: relative;
+	width: auto;
+	min-width: 945px;
+	min-height: 100px;
+	text-align:left;
+	padding: 0;
+}
+
+div#top_container {
+	float: left;
+	position: relative;
+	width: 100%;
+	height: auto;
+	z-index: 400;
+}
+
+div#logo {
+	float: left;
+	position: relative;
+	width:145px;
+}
+
+div#top_tools {
+	float: right;
+	position: relative;
+	width:496px;
+	height:88px;
+	padding-top: 6px;
+	border-top: 8px solid #990033;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: .7em;
+	font-weight: bold;
+}
+
+* html div#top_tools {
+	width:498px;
+	margin-right:26px;
+	padding-top: 2px;
+}
+
+div#top_tools a {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	color:#000000;
+	text-decoration:none;
+}
+
+div#top_tools a:hover {
+	color:#990033;
+	text-decoration:underline;
+}
+
+div#top_tools div.left_tools {
+	float: left;
+	position: relative;
+	width:170px;
+}
+
+* html div#top_tools div.left_tools {
+	width:175px;
+}
+
+div#top_tools div#mugsi, div#top_tools div#staff_dir {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+}
+
+div#top_tools div#mugsi {
+	float:right;
+	position: relative;
+	width:160px;
+	margin-top:16px;
+	margin-bottom:12px;
+	padding-left:22px;
+	text-align:right;
+}
+
+* html div#top_tools div#mugsi {
+	width:154px;
+	margin-top:16px;
+	margin-bottom:4px;
+	padding-left:22px;
+}
+
+div#top_tools div#staff_dir {
+	float:right;
+	position:relative;
+	width:170px;
+	height:auto;
+	margin-bottom:12px;
+	padding-left:12px;
+	text-align:right;
+}
+
+* html div#top_tools div#staff_dir {
+	width:160px;
+	padding-left:4px;
+}
+
+div#top_tools div.right_tools {
+	float: right;
+	position: relative;
+	width:310px;
+}
+
+* html div#top_tools div.right_tools {
+	width:306px;
+}
+
+div#top_tools div#quick_links {
+	float: right;
+	position: relative;
+	margin-top:14px;
+	margin-bottom:8px;
+	margin-right:39px;
+}
+
+.ie div#top_tools div#quick_links {
+	margin-right:20px;
+}
+* html div#top_tools div#quick_links {
+	margin-top:14px;
+	margin-bottom:8px;
+	margin-right:0px;
+}
+
+.mac div#top_tools div#quick_links {
+	margin-right:21px;
+}
+.mac.safari div#top_tools div#quick_links {
+	margin-right:13px;
+}
+
+div#top_tools div#quick_links select {
+	font-size:.91em;
+}
+
+.mac div#top_tools div#quick_links select {
+	font-size:1em;
+}
+
+div#top_tools div#quick_links ul {
+	padding: 0 0 0 0;
+	margin: 0px 0px 0 0px;
+	z-index:100;	
+}
+	
+div#top_tools div#quick_links li {
+	float:left;	/* causes the list to align horizontally instead of stack */
+	position:relative; /* positioning context for the absolutely positioned drop-down */
+	list-style-type:none;	/* removes the bullet off each list item */
+	margin: 0 5px 0 0;	
+	z-index:100;
+}
+
+div#top_tools div#quick_links li.tools_text {
+	padding:2px 0px 0px 0px;
+}
+.mac.safari div#top_tools div#quick_links li.tools_text {
+	padding:4px 0px 0px 0px;
+}
+
+div#top_tools div#search {
+	float: right;
+	position: relative;
+	margin-right:30px;
+}
+
+* html div#top_tools div#search {
+	margin-right:20px;
+}
+
+div#top_tools div#search div.search_input {
+	margin-right:0px;
+	font-size:1em;
+	font-weight:bold;
+}
+
+div#top_tools div#search div.search_input input {
+	margin:0;
+	padding:0;
+	font-size:10px;	
+}
+
+div#top_tools div#search div.search_area {
+	margin-right:0px;
+	margin-top:8px;
+	font-weight:normal;
+}
+* html div#top_tools div#search div.search_area {
+	margin-right:0px;
+	margin-top:2px;
+}
+
+div#top_tools div#search div.search_area label {
+	padding-bottom:8px;
+	vertical-align: middle;
+}
+
+/* start search box form*/
+
+form#searchbox {
+}
+
+div#searchbox_input {
+	margin-left:72px;
+	margin-bottom:6px;
+}
+
+* html div#searchbox_input {
+	margin-left:55px;
+}
+
+.safari div#searchbox_input {
+	margin-left:73px;
+}
+
+.opera div#searchbox_input {
+	margin-left:74px;
+}
+
+div#searchbox_input input.searchbox_text {
+	font-size:1em;
+	width:112px;
+	height:12px;
+	padding-left:4px;
+	padding-right:4px;
+}
+
+.safari div#searchbox_input input.searchbox_text {
+	height:11px;
+}
+
+div#searchbox_area_container {
+	float:right;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	width:310px;
+}
+div#searchbox_area {
+	font-size:1em;
+	font-weight:normal;
+	color:#000000;
+}
+
+div#searchbox_area input, div#searchbox_area label {
+	display:none;
+}
+
+div#searchbox_input input {
+	display:inline;
+}
+
+.mac.safari div#searchbox_input {
+	margin-left:85px;
+}
+
+.mac.safari div#searchbox_input input.searchbox_text {
+	width:106px;
+}
+
+.mac.ff2 div#searchbox_input, .mac.ff3 div#searchbox_input {
+	margin-left:64px;
+}
+
+.mac.ff2 div#searchbox_input input.searchbox_text, .mac.ff3 div#searchbox_input input.searchbox_text {
+	width:120px;
+}
+
+/* end search box form*/
+
+div#left_container {
+	float: left;
+	position: relative;
+	width:167px;
+	height:auto;
+	margin-top:12px;
+	margin-left:0px;
+}
+
+div#print_side_bar {
+	display:none;
+	text-align:right;
+	width:inherit;
+	padding-top:24px;
+	margin-right:20px;
+}
+
+div#interior_breadcrumbs {
+	float: left;
+	position:relative;
+	width:776px;
+	margin-top:4px;
+	margin-bottom:10px;
+	padding-bottom:6px;
+	font-size: 0.75em;
+	font-weight:normal;
+	line-height: 1.5em;
+	color: #666666;	
+	border-bottom: 3px solid #CCCCCC;
+}
+
+* html div#interior_breadcrumbs {
+	width:764px;
+}
+
+div#interior_breadcrumbs ul {
+	display:none;
+	margin: 0;	
+	z-index:100;	
+}
+	
+div#interior_breadcrumbs li {
+	float:left;
+	position:relative;
+	padding: 0 5px 0 0;	
+	list-style-type:none;
+	z-index:100;
+}
+	
+div#interior_breadcrumbs a {	
+	text-decoration: none;
+	color: #999999;
+}
+
+div#interior_breadcrumbs a:hover {	
+	text-decoration: underline;
+	color: #990033;
+}
+
+div#main_content {
+	float: left;
+	position: relative;
+	width:776px;
+	font-size:.9em
+	}
+	
+* html div#main_content {
+	width:771px;
+}
+
+div#homepage_image {
+    float:left;
+    position:relative;
+	width:600px;
+	height:200px;
+}
+
+* html div#homepage_image {
+	width:600px;
+	height:200px;
+}
+
+/* start footer section */
+div#footer {
+	float:left;
+	position:relative;
+	clear:both;
+	border-top: 3px solid #cccccc;
+	font-size:10px;	
+	font-weight: bold;
+	text-align: center;	
+	color: #666666;	
+	width:945px;
+	height:24px;
+	margin-top: 12px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:6px;
+}
+
+div#footer a {	
+	color: #666666;	
+	text-decoration: none;
+}
+
+div#footer a:hover {	
+	color: #990033;
+	text-decoration: none;
+}
+
+div#footer div#footer_links {
+	display:inline;
+}
+
+div#footer .vertical_separator {
+	margin:0px 4px;
+}
+/* end footer section */
+
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	line-height:	19px;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			154px; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left; 
+	position:		relative; 
+}
+.sf-menu a {
+	display:		block; 
+	position:		relative;
+}
+/* .sf-menu li:hover ul, */
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			33px; /* match top ul list item height */
+	z-index:		99;
+}
+
+.sf-menu li ul {
+	z-index: 0;
+}
+
+/* ul.sf-menu li:hover li ul, */
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+	left: -999em;
+}
+/* ul.sf-menu li li:hover ul, */
+ul.sf-menu li li.sfHover ul {
+	left:			-154px; /* match ul width */
+	top:			0;
+}
+/* ul.sf-menu li li:hover li ul, */
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+	left: -999em;
+}
+/* ul.sf-menu li li li:hover ul, */
+
+ul.sf-menu li li li.sfHover ul {
+	left:			154px; /* match ul width */
+	top:			0;
+}
+
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	float:			left;
+	margin-bottom:	0;
+	/* previously 1em */
+	font-family: verdana, arial, sans-serif;
+	font-size:12px;
+}
+.sf-menu a {
+	padding: 		0;
+	text-decoration:none;
+	padding:	.60em 1.4em;
+}
+
+.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#ffffff!important;
+}
+.sf-menu li {
+	background:		#990033;
+	font-weight: bold;
+}
+.sf-menu li li {
+	background:		#990033;
+	font-weight: normal;
+	width: 154px;
+}
+.sf-menu li li li {
+	background:		#990033;
+	font-weight: normal;
+}
+/*.sf-menu li:hover, */ .sf-menu li.sfHover,
+/*.sf-menu a:focus, .sf-menu a:hover, */ .sf-menu a:active {
+	background:		#666666;
+	outline:		0;
+	height: 100%;
+}
+
+/*** arrows **/
+.sf-menu a.sf-with-ul {
+	padding-right: 	1.35em;
+	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+}
+.sf-sub-indicator {
+	position:		absolute;
+	display:		block;
+	right:			.75em;
+	top:			1.05em; /* IE6 only */
+	width:			10px;
+	height:			10px;
+	text-indent: 	-999em;
+	overflow:		hidden;
+	/* background:		url('/mcauth/images/arrows-ffffff.png') no-repeat -10px -100px; */ /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	top:			.8em;
+	background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+}
+/* apply hovers to modern browsers */
+/* a:focus > .sf-sub-indicator,
+a:hover > .sf-sub-indicator, */
+a:active > .sf-sub-indicator,
+/* li:hover > a > .sf-sub-indicator, */
+li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+
+/* point right for anchors in subs */
+.sf-menu ul .sf-sub-indicator { background-position:  -10px 0; }
+.sf-menu ul a > .sf-sub-indicator { background-position:  0 0; }
+/* apply hovers to modern browsers */
+/* .sf-menu ul a:focus > .sf-sub-indicator, */
+/*.sf-menu ul a:hover > .sf-sub-indicator,*/
+.sf-menu ul a:active > .sf-sub-indicator,
+/* .sf-menu ul li:hover > a > .sf-sub-indicator, */
+.sf-menu ul li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+
+/*** shadows for all but IE6 ***/
+.sf-shadow ul {
+	background:	url('https://www.mcmaster.ca/opr/images/shadow.png') no-repeat bottom right;
+	padding: 0 8px 9px 0;
+	/*-moz-border-radius-bottomleft: 17px;
+	-moz-border-radius-topright: 17px;
+	-webkit-border-top-right-radius: 17px;
+	-webkit-border-bottom-left-radius: 17px; */
+}
+.sf-shadow ul.sf-shadow-off {
+	background: transparent;
+}
+
+/* Skip link styling starts here. */
+/* First, the positioning CSS for the skip link and the skip target. Changing any of this will most likely break the skip link in one browser or another, so if you change it then TEST IT */
+#skiplinkholder a, #skiplinkholder a:link, #skiplinkholder a:visited {display: block; width: 99%; position: absolute; top: 0; left: -200%; z-index: 2}
+#skiplinkholder a:focus, #skiplinkholder a:active {left: 0; top: 0; z-index: 100}
+#skiptargetholder {position: absolute; left: -200%}
+/* You may find on certain page layouts that the skip link is appearing underneath other elements on the page in IE7 and below. If this is the case then try uncommenting the two statements below, and if that does not work then try increasing the z-index value above as well */
+/*
+*+html #skiplinkholder a:focus, *+html #skip a:active {position: relative}
+* html #skiplinkholder a:active {position: relative}
+*/
+/* Now, the visual styling. Change this as desired */
+#skiplinkholder a, #skiplinkholder a:link, #skiplinkholder a:visited {color: #fff; background: #990033; text-decoration: none; border-bottom: solid #ccc 2px; padding: 5px}
+/* End of skip link styling */
+/* Skip nav link styling starts here. */
+/* First, the positioning CSS for the skip link and the skip target. Changing any of this will most likely break the skip link in one browser or another, so if you change it then TEST IT */
+#skipnavlinkholder a, #skipnavlinkholder a:link, #skipnavlinkholder a:visited {display: block; width: 99%; position: absolute; top: 0; left: -200%; z-index: 2}
+#skipnavlinkholder a:focus, #skipnavlinkholder a:active {left: 0; top: 0; z-index: 100}
+#skipnavtargetholder {position: absolute; left: -200%}
+/* You may find on certain page layouts that the skip link is appearing underneath other elements on the page in IE7 and below. If this is the case then try uncommenting the two statements below, and if that does not work then try increasing the z-index value above as well */
+/*
+*+html #skiplinkholder a:focus, *+html #skip a:active {position: relative}
+* html #skiplinkholder a:active {position: relative}
+*/
+/* Now, the visual styling. Change this as desired */
+#skipnavlinkholder a, #skipnavlinkholder a:link, #skipnavlinkholder a:visited {color: #fff; background: #990033; text-decoration: none; border-bottom: solid #ccc 2px; padding: 5px}
+/* End of skip link styling */
+
+#menuskiptargetholder {position: absolute; left: -200%}
+
+#logo {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 144px;
+	height: 97px;
+	overflow: visible;
+	cursor: pointer;
+}
+
+#logo span {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 144px;
+	height: 97px;
+	background: url('https://www.mcmaster.ca/GlobalTemplates/images/logo_mcmaster.gif') top left no-repeat;
+}
+
+#searchbox_area {
+    font-size:1em;
+    font-weight:normal;
+    color:#000000;
+}
+
+#searchbox_area legend {
+	display: none;
+}

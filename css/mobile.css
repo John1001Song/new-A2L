@@ -1,0 +1,159 @@
+/* CSS Mobile Document */
+
+/************************************************************************************
+smaller than 980
+*************************************************************************************/
+@media screen and (max-width: 980px) {
+/*Do nothing*/
+	
+
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+/* Iphone >= 3GS (640px) */ 
+
+
+html, body, 
+div#skiplinkholder, 
+div#skipnavlinkholder,
+div#container,
+div#top_container,
+div#main_container,
+div#left_container,
+div#main_content,
+div#format_2,
+div#top_content, 
+div#bottom_content {
+  margin:0;
+  padding:0;
+  border:0;
+ 
+}
+
+div#skiplinkholder, div#skipnavlinkholder, h1#logo, div#top_tools, div#top_container,div#left_container, img#banner {
+  display:none;	
+}
+
+
+div#container, div#main_container, div#top_container {
+  width:100%;	
+  min-width:100%;
+}
+
+div#main_content, div#format_2, div#bottom_content {
+ width:100%;	
+}
+
+h1.content_title1 {
+margin:0;
+display:none;		
+}
+
+div#hiddenPageTitle {
+	display:block;	
+}
+
+div#hiddenPageTitle h2 {
+	color:#fff;
+	font-size:1.4em;
+	padding:5px;
+	margin:0;
+	width:100%;	
+}
+
+p#macidlog{
+	display:none;
+}
+
+div#PrivacyPolicy {
+	display:block;
+	padding:5px;
+	width:90%;
+	margin:0 auto;
+}
+
+h2#hiddenPageFooter {
+	display:block;
+	text-align:center;
+	font-size:0.95em;
+	font-weight:normal;
+}
+
+form#macidloginform {
+width:90%;		
+margin:0;
+border:0;
+background-color:white;
+text-align:center;
+}
+
+.form-horizontal .control-group > label { width:65px; display:inline; }
+
+form#macidloginform div#submit-button { padding-left:67px; }
+
+form#macidloginform div.control-group div.controls { margin:0; }
+
+button#submit { margin:0; }
+
+div#privacyPolicy {	padding:5px; }
+
+div#footer {
+ display:none;	
+}
+
+table#hiddenTable {
+	display:block;
+	margin:0;
+}
+
+
+/*IE 6 CSS hack */
+html, body {
+	_margin:0; 
+	_padding:0;
+}
+
+table.ietable {
+	width:100%;
+	/*_text-align:left;*/
+}
+
+form#macidloginform div#submit-button { 
+	_padding-left:0; 
+}
+
+.form-horizontal .control-group > label { 
+_width:60px; 
+_display:inline;
+}
+
+.form-horizontal .control-group > input { 
+_display:inline;
+_margin:0;
+}
+
+div#PrivacyPolicy {
+	_width:320px;
+	/*_color:#ffffff;*/
+}
+
+
+
+
+
+}
+
+/************************************************************************************
+smaller than 560
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+/* Iphone < 3GS (320px) */
+
+
+
+	
+}
+

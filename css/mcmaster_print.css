@@ -1,0 +1,62 @@
+@page {
+  size: 7in 9.25in;
+  margin: 27mm 16mm 27mm 16mm;
+}
+
+div#container {
+	margin-left:0px;
+	padding-left:48px;
+	font-family:serif, "Times New Roman", Times;
+	font-size:14pt;
+	float:none;
+	width:100%;
+}
+
+div#top_container {
+	height: 100px;
+}
+
+div#logo {
+	padding-left:20px;
+}
+
+div#top_tools {
+	display:none;
+}
+
+div#left_container {
+	width:0px;
+}
+
+div#print_side_bar {
+	display:none;
+}
+
+div#left_container, div#left_nav, div#left_nav_image, div.left_nav_title {
+	display:none;
+}
+
+div#interior_breadcrumbs {
+	display:none;
+}
+
+.menu {
+	display:none;
+}
+
+div#main_content {
+	margin-top:0px;
+}
+
+ul#toolbox {
+	display:none;
+}
+
+div#bottom_content {
+	padding-left:0;
+	padding-right:0;
+}
+
+div#footer {
+	display:none;
+}
