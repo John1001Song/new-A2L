@@ -1,0 +1,78 @@
+.d2l-navigation-bar {
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+}
+.d2l-navigation-bar-content {
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.d2l-navigation-bar-left {
+    display: table-cell;
+    width: 40%;
+    height: 100%;
+}
+
+.d2l-navigation-bar-right {
+    display: table-cell;
+    width: 60%;
+    height: 100%;
+}
+
+.home {
+    padding-top: 6px;
+}
+
+.home-pic {
+    vertical-align: middle;
+
+}
+
+.home-text{
+    font-family: Verdana;
+    font-size: 6px;
+    color: white;
+    height: 100%;
+    vertical-align: middle;
+    font-size: smaller;
+    text-decoration: none;
+}
+
+.home-text::hover {
+    text-decoration: underline;
+}
+
+
+.icons {
+    /*display: inline;*/
+
+    vertical-align: middle;
+}
+
+.icons > img {
+    vertical-align: middle;
+    height: 20px;
+    width: 26px;
+}
+
+
+.icons > .email {
+    border-right:1px solid white;
+    padding-right: 5px;
+}
+
+.icons > .sticky {
+    border-right:1px solid white;
+    padding-right: 5px;
+}
+
+.icons > .bubble {
+    padding-right: 5px;
+}

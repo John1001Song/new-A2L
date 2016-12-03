@@ -19,8 +19,10 @@ var app = new Vue({
     			if (users[this.userInputName] != undefined) {
     				ret = users[this.userInputName];
     				if (this.userInputPassword == ret[0]) {
-    					window.location.href="main.html";
-    				}
+    					window.location.href="mainPage.html";
+    				} else {
+						alert("Incorrect password");
+					}
     			} else {
 
     			}
