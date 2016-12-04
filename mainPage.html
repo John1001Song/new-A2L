@@ -2,333 +2,358 @@
 
 <head>
 
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $('#accordion').accordion({
-        heightStyle: "content",
-        collapsible:true,
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $('#accordion').accordion({
+                heightStyle: "content",
+                collapsible: true,
 
-        beforeActivate: function(event, ui) {
-            // The accordion believes a panel is being opened
-            if (ui.newHeader[0]) {
-                var currHeader  = ui.newHeader;
-                var currContent = currHeader.next('.ui-accordion-content');
-            // The accordion believes a panel is being closed
-            } else {
-                var currHeader  = ui.oldHeader;
-                var currContent = currHeader.next('.ui-accordion-content');
-            }
-            // Since we've changed the default behavior, this detects the actual status
-            var isPanelSelected = currHeader.attr('aria-selected') == 'true';
+                beforeActivate: function(event, ui) {
+                    // The accordion believes a panel is being opened
+                    if (ui.newHeader[0]) {
+                        var currHeader = ui.newHeader;
+                        var currContent = currHeader.next('.ui-accordion-content');
+                        // The accordion believes a panel is being closed
+                    } else {
+                        var currHeader = ui.oldHeader;
+                        var currContent = currHeader.next('.ui-accordion-content');
+                    }
+                    // Since we've changed the default behavior, this detects the actual status
+                    var isPanelSelected = currHeader.attr('aria-selected') == 'true';
 
-            // Toggle the panel's header
-            currHeader.toggleClass('ui-corner-all',isPanelSelected).toggleClass('accordion-header-active ui-state-active ui-corner-top',!isPanelSelected).attr('aria-selected',((!isPanelSelected).toString()));
+                    // Toggle the panel's header
+                    currHeader.toggleClass('ui-corner-all', isPanelSelected).toggleClass('accordion-header-active ui-state-active ui-corner-top', !isPanelSelected).attr('aria-selected', ((!isPanelSelected).toString()));
 
-            // Toggle the panel's icon
-            currHeader.children('.ui-icon').toggleClass('ui-icon-triangle-1-e',isPanelSelected).toggleClass('ui-icon-triangle-1-s',!isPanelSelected);
+                    // Toggle the panel's icon
+                    currHeader.children('.ui-icon').toggleClass('ui-icon-triangle-1-e', isPanelSelected).toggleClass('ui-icon-triangle-1-s', !isPanelSelected);
 
-            // Toggle the panel's content
-            currContent.toggleClass('accordion-content-active',!isPanelSelected)    
-            if (isPanelSelected) { currContent.slideUp(); }  else { currContent.slideDown(); }
+                    // Toggle the panel's content
+                    currContent.toggleClass('accordion-content-active', !isPanelSelected)
+                    if (isPanelSelected) {
+                        currContent.slideUp();
+                    } else {
+                        currContent.slideDown();
+                    }
 
-            return false; // Cancels the default action
-        }
-    });
+                    return false; // Cancels the default action
+                }
+            });
 
 
-  } );
-  </script>
+        });
+    </script>
 </head>
 
 <body>
-    
-<div id="app">
+
+    <div id="app">
 
 
 
 
-    <div class="d2l-navigation-bar">
+        <div class="d2l-navigation-bar">
 
-        <div class="d2l-navigation-bar-padding">
+            <div class="d2l-navigation-bar-padding">
 
-            <div class="d2l-navigation-bar-content">
-                <div class="d2l-navigation-bar-left">
+                <div class="d2l-navigation-bar-content">
+                    <div class="d2l-navigation-bar-left">
 
-                    <div class="home">
-                        <img class="home-pic" src="images/pixel.png" style="width:20px" >
-                        <a href="mainPage.html" class="home-text">My Home</a>
-                    </div>
-                    
-                </div>
-
-                <div class="d2l-navigation-bar-right">
-
-                    <div class="icons">
-                        <img class="email" src="images/email-icon.png" alt="" >
-                        <img class="sticky" src="images/sticky.png" alt="" >
-                        <img class="bubble" src="images/bubble.png" alt="" >
-                    </div>
-
-                    <div class="profile">
-                        <div class="profile-pic">
-                            <!--<img v-attr="src: profilePicLink">-->
+                        <div class="home">
+                            <img class="home-pic" src="images/pixel.png" style="width:20px">
+                            <a href="mainPage.html" class="home-text">My Home</a>
                         </div>
-                        <div class="profile-name">
-                            <span>{{test}}bbbbb{{profileName}}</span>
+
+                    </div>
+
+                    <div class="d2l-navigation-bar-right">
+
+                        <div class="icons">
+                            <img class="email" src="images/email-icon.png" alt="">
+                            <img class="sticky" src="images/sticky.png" alt="">
+                            <img class="bubble" src="images/bubble.png" alt="">
                         </div>
+
+                        <div class="profile">
+                            <div class="profile-pic">
+                                <!--<img v-attr="src: profilePicLink">-->
+                            </div>
+                            <div class="profile-name">
+                                <span>{{test}}bbbbb{{profileName}}</span>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
-
             </div>
         </div>
-    </div>
 
-    <div class="row helper-bar">
+        <div class="row helper-bar">
 
-        <div class="col-sm-2 helper-bar-logo">
+            <div class="col-sm-2 helper-bar-logo">
 
-        </div>
-         <div class="col-sm-2 helper-bar-logo">
-            <img src="images/avenue-logo.jpg" alt="" >
-        </div>
-        <div class="col-sm-6 helper-bar-icons">
-            <ul class="d2l-navbar-area-list">
-                <li>
-                    <div class="d2l-navbar-item">
-                        <a class="d2l-navbar-link" ><img class="d2l_1_68_115" src="/d2l/img/lp/pixel.gif" alt=""><span>PebblePad</span></a></div>
-                    <span class="d2l-navbar-sep"></span>
-                </li>
-                <li>
-                    <div class="d2l-navbar-item">
-                        <a class="d2l-navbar-link" ><img class="d2l_1_69_452" src="/d2l/img/lp/pixel.gif" alt=""><span>Badges</span></a></div>
-                    <span class="d2l-navbar-sep"></span>
-                </li>
-                <li>
-                    <div class="d2l-navbar-item">
-                        <a class="d2l-navbar-link" ><img class="d2l_1_70_694" src="/d2l/img/lp/pixel.gif" alt=""><span>Locker</span></a></div>
-                    <span class="d2l-navbar-sep"></span>
-                </li>
-                <li>
-                    <div class="d2l-navbar-item">
-                        <a class="d2l-navbar-link" ><img class="d2l_1_71_320" src="/d2l/img/lp/pixel.gif" alt=""><span>Blog</span></a></div>
-                    <span class="d2l-navbar-sep"></span>
-                </li>
-                <li>
-                    <div class="d2l-navbar-item">
-                        <a class="d2l-navbar-link"><img src="/content/icon_eSupport_copyOf_40300.png?v=10.6.7.4474-219" alt=""><span>eSupport</span></a></div>
-                    <span class="d2l-navbar-sep"></span>
-                </li>
-                <li class="d2l-navbar-area-list-item-last">
-                    <div class="d2l-navbar-item">
-                        <a class="d2l-navbar-link"><img class="d2l_1_72_977" src="/d2l/img/lp/pixel.gif" alt=""><span>Self Registration</span></a></div>
-                    <span class="d2l-navbar-sep"></span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="col-sm-4">
-
-        </div>
-
-
-    </div>
-
-
-    <div class="main-panel">
-        <div class="page-header">
-        </div>
-
-        <div class="main-panel-content">
-            <div class="left-panel">
-                <div class="panel-course">
-                    <div class="course-header">
-                        <div class="course-header-container">
-                            <h4 class="course-header-text" color="white">My Course</h2>
+            </div>
+            <div class="col-sm-2 helper-bar-logo">
+                <img src="images/avenue-logo.jpg" alt="">
+            </div>
+            <div class="col-sm-6 helper-bar-icons">
+                <ul class="d2l-navbar-area-list">
+                    <li>
+                        <div class="d2l-navbar-item">
+                            <a class="d2l-navbar-link"><img class="d2l_1_68_115" src="/d2l/img/lp/pixel.gif" alt=""><span>PebblePad</span></a>
                         </div>
-
-                        <div class="course-header-collapse-container">
-                            <div id="accordion">
-                            <h4 class="terms">Fall 2016(T1)</h4>
-                            <div class="test">
-                                <div class="courses"><a href="#">SFWR ENG 4HC3: Human Computer Interaction</a></div>
-                                <div class="courses"><a href="#">MECHTRON 4AA4: Real Time System and Control Applications</a></div>
-                                <div class="courses"><a href="#">SFWR ENG 3DB3: Databases</a></div>
-                                <div class="courses"><a href="#">ENVIRSC 1C03: Climate, Water And Environment</a></div>
-                                <div class="courses"><a href="#">SFWR ENG 4O03: Operations Research / Linear Optimization</a></div>
-                                <div class="courses"><a href="#">MECHTRON 4TB6A:TRON & SE Capstone Design Project</a></div>
-                            </div>
-                            <h4 class="terms">Winter 2015(T2)</h4>
-                            <div class="test">
-                                <div class="courses"><a href="#">ENGINEER 2B03: ENGINEER ECONOMICS</a></div>
-                                <div class="courses"><a href="#">SFWR ENG 3BB4: SFWR DESIGN III</a></div>
-                                <div class="courses"><a href="#">MECHTRON 3TB4: Embedded System Design II</a></div>
-                                <div class="courses"><a href="#">SFWR ENG 3DX4: Dynamic Model & Control Phys Systems</a></div>
-                                <div class="courses"><a href="#">SFWRE NG 3F03: Machine-Level Programming</a></div>
-                            </div>
-                            <h4 class="terms">Fall 2014(T1)</h4>
-                            <div class="test">
-                                <div class="courses"><a href="#">MECHTRON 3TA4: Embedded Systems Design I</a></div>
-                                <div class="courses"><a href="#">SFWR ENG 3A04: SFWR DESIGN II</a></div>
-                                <div class="courses"><a href="#">SFWR ENG 3GA3: Computer Architecture</a></div>
-                                <div class="courses"><a href="#">SFWR ENG 3RA3: Software Requirement & Security </a></div>
-                                <div class="courses"><a href="#">SFWR ENG 3X03: Probability & Stats for Eng</a></div>
-                            </div>
-                            <h4 class="terms">Winter 2014(T2)</h4>
-                            <div class="test">
-                                <div class="courses"><a href="#">ENGINEER 3N03: Electronics Instr</a></div>
-                                <div class="courses"><a href="#">SFWR ENG 2C03: Data Struct & Algirithms</a></div>
-                                <div class="courses"><a href="#">SFWR ENG 2FA3: Discrete Math & Logic II</a></div>
-                                <div class="courses"><a href="#">SFWR ENG 2MX3: Math Model Of System </a></div>
-                                <div class="courses"><a href="#">SFWR ENG 3X03: Probability & Stats for Eng</a></div>
-                            </div>
-
-                            <h4 class="terms">Fall 2013(T1)</h4>
-                            <div class="test">
-                                <div class="courses"><a href="#">ENGINEER 2MM3: Electrical Circui & Power</a></div>
-                                <div class="courses"><a href="#">SFWR ENG 2DA4: Data Struct & Algirithms</a></div>
-                                <div class="courses"><a href="#">SFWR ENG 2DM3: Discrete Math & Logic I</a></div>
-                                <div class="courses"><a href="#">SFWR ENG 2S03: Math Model Of System </a></div>
-                                <div class="courses"><a href="#">SFWR ENG 3X03: Principles Of Programming</a></div>
-                            </div>
-
-
-                            <h4 class="terms">Winter 2013(T2)</h4>
-                            <div>
-                                <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
-                                <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
-                                <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
-                                <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
-                                <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
-
-
-                            </div>
-
-                            <h4 class="terms">Fall 2012(T2)</h4>
-                            <div>
-                                <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
-                                <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
-                                <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
-                                <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
-                                <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
-
-                            </div>
-
-                            </div>
+                        <span class="d2l-navbar-sep"></span>
+                    </li>
+                    <li>
+                        <div class="d2l-navbar-item">
+                            <a class="d2l-navbar-link"><img class="d2l_1_69_452" src="/d2l/img/lp/pixel.gif" alt=""><span>Badges</span></a>
                         </div>
-
-                    </div>
-
-                </div>
-
-                <div class="panel-course-bottom">
-                    <div class="bottom-left">
-                        <div class="bottom-left-library-header">
-                            <div class="bottom-left-library-text">
-                                <h4>Library</h4>
-                            </div>
+                        <span class="d2l-navbar-sep"></span>
+                    </li>
+                    <li>
+                        <div class="d2l-navbar-item">
+                            <a class="d2l-navbar-link"><img class="d2l_1_70_694" src="/d2l/img/lp/pixel.gif" alt=""><span>Locker</span></a>
                         </div>
-
-                        <div class="bottom-left-library-pic">
-                            <div class="d2l-htmlblock"><p></p>
-
-                                <div align="center">
-                                <p><a href="http://library.mcmaster.ca/justask"><img alt="Ask Us - Library help from anywhere - chat, email, phone or visit" src="https://library.mcmaster.ca/images/ask-library-help-whitebg.png" title="Ask Us - chat, email, phone or visit"></a></p>
-                                <script src="https://server.iad.liveperson.net/hc/64904228/?cmd=mTagRepstate&amp;site=64904228&amp;buttonID=33&amp;divID=lpButDivID-1377699763&amp;bt=1&amp;c=1" type="text/javascript">
-                                // <![CDATA[
-                                &nbsp;
-                                // ]]>
-                                </script>
-
-                                <p><a target="_blank" href="http://library.mcmaster.ca">McMaster University Library</a> | <a href="http://library.mcmaster.ca/hours-info" target="_blank">Hours</a><br> <a href="http://hsl.mcmaster.ca" target="_blank">Health Sciences Library</a> | <a href="http://hsl.mcmaster.ca/about/hours/" target="_blank">Hours</a><br> <a href="http://library.mcmaster.ca/course-reserves" target="_blank">Course Reserves</a><br> <a href="http://library.mcmaster.ca/myaccount" target="_blank">Renew your books online</a><br> <a href="http://www.grammarly.com" target="_blank"></a><a href="http://www.grammarly.com/edu/" target="_blank">Grammarly</a></p>
-                                </div></div>
+                        <span class="d2l-navbar-sep"></span>
+                    </li>
+                    <li>
+                        <div class="d2l-navbar-item">
+                            <a class="d2l-navbar-link"><img class="d2l_1_71_320" src="/d2l/img/lp/pixel.gif" alt=""><span>Blog</span></a>
                         </div>
-                        
-                    </div>
-
-                    <div class="bottom-sep">
-
-                    </div>
-
-                    <div class="bottom-right">
-                        <div class="bottom-right-store-header">
-                            <div class="bottom-right-store-text">
-                                <h4>Campus Sotre</h4>
-                            </div>
+                        <span class="d2l-navbar-sep"></span>
+                    </li>
+                    <li>
+                        <div class="d2l-navbar-item">
+                            <a class="d2l-navbar-link"><img src="/content/icon_eSupport_copyOf_40300.png?v=10.6.7.4474-219" alt=""><span>eSupport</span></a>
                         </div>
-
-                        <div class="bottom-right-store-pic">
-                            <div id="d2l_1_24_165" class="d2l-widget-content d2l_1_106_88 d2l_1_107_997 d2l_1_108_469">
-                                                                        <div class="d2l-htmlblock"><p style="text-align: center;"><img src="images/campus-store-logo-connected.png" alt="campus store logo" title="campus store logo"><br> <br> <a href="https://campusstore.mcmaster.ca/information/hours.html" target="_blank">Hours for All Stores</a> | <a href="https://campusstore.mcmaster.ca/information/faq/textbook-faq.html" target="_blank">FAQ </a><br><a href="https://campusstore.mcmaster.ca/cgi-mcm/ws/txhome.pl?wsgm=coursematerial" target="_blank">Build Your Customized Book List and Order Online</a> <br> <a href="http://sellmytextbooks.org/members/17/" target="_blank">Selling back your books? Click on Get a Quote</a></p>
-                            <p style="text-align: center;"></p></div>
-                                                                        <div class="d2l-clear"></div>
-
-                            </div>
+                        <span class="d2l-navbar-sep"></span>
+                    </li>
+                    <li class="d2l-navbar-area-list-item-last">
+                        <div class="d2l-navbar-item">
+                            <a class="d2l-navbar-link"><img class="d2l_1_72_977" src="/d2l/img/lp/pixel.gif" alt=""><span>Self Registration</span></a>
                         </div>
-                    </div>
-                </div>
+                        <span class="d2l-navbar-sep"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4">
 
             </div>
 
-            <div class="right-panel">
-                <div class="right-panel-announcement">
-                    <div class="right-panel-announcement-header">
-                        <div class="right-panel-announcement-header-text">
-                            <h4>Announcement</h4>
-                        </div>
-                    </div>
 
-                    <div class="right-panel-announcement-content">
-                        <li class="right-panel-announcement-content-wrapper">
-                            <div class="d2l-datalist-item-content">
-                                <h3 class="d2l-heading vui-heading-2 d2l-heading-half d2l_1_41_0">Phishing scam/attack targeted specifically at the Avenue to Learn community</h3>
-                                <a class="d2l-imagelink d2l_1_53_949 d2l_1_114_753 vui-outline" id="d2l_1_113_598" href="javascript:void(0);" onclick="return false;" title="Dismiss Phishing scam/attack targeted specifically at the Avenue to Learn community from widget" aria-label="Dismiss Phishing scam/attack targeted specifically at the Avenue to Learn community from widget" role="button"></a>
-                                <div class="d2l-clear"></div>
-                                <div class="d2l-htmlblock d2l_1_115_911">Posted Jul 15, 2016 4:02 PM</div>
-                                <div class="d2l-clear"></div>
-                                <div class="d2l_1_116_279">
-                                    <div class="d2l-htmlblock"><p>There is an advanced spear-phishing attack ongoing against our community, and they’re using Avenue to learn as their bait. <br><br> The attackers have created a site that looks identical to the Avenue login site, and baited users to go there with a password expiry notice. <br><br> Please note that the Avenue to Learn team does not ever send out emails regarding password resets, and if users are ever unsure, please contact us at <a rel="noopener" href="mailto:support.avenue@cll.mcmaster.ca">support.avenue@cll.mcmaster.ca</a> and we'll be happy to respond to any concerns that you may have.</p></div>
+        </div>
+
+
+        <div class="main-panel">
+            <div class="page-header">
+            </div>
+
+            <div class="main-panel-content">
+                <div class="left-panel">
+                    <div class="panel-course">
+                        <div class="course-header">
+                            <div class="course-header-container">
+                                <h4 class="course-header-text" color="white">My Course</h2>
+                            </div>
+
+                            <div class="course-header-collapse-container">
+                                <div id="accordion">
+                                    <h4 class="terms">Fall 2016(T1)</h4>
+                                    <div class="test">
+                                        <div class="courses"><a href="coursePage.html">SFWR ENG 4HC3: Human Computer Interaction</a></div>
+                                        <div class="courses"><a href="coursePage.html">MECHTRON 4AA4: Real Time System and Control Applications</a></div>
+                                        <div class="courses"><a href="coursePage.html">SFWR ENG 3DB3: Databases</a></div>
+                                        <div class="courses"><a href="coursePage.html">ENVIRSC 1C03: Climate, Water And Environment</a></div>
+                                        <div class="courses"><a href="coursePage.html">SFWR ENG 4O03: Operations Research / Linear Optimization</a></div>
+                                        <div class="courses"><a href="coursePage.html">MECHTRON 4TB6A:TRON & SE Capstone Design Project</a></div>
+                                    </div>
+                                    <h4 class="terms">Winter 2015(T2)</h4>
+                                    <div class="test">
+                                        <div class="courses"><a href="#">ENGINEER 2B03: ENGINEER ECONOMICS</a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 3BB4: SFWR DESIGN III</a></div>
+                                        <div class="courses"><a href="#">MECHTRON 3TB4: Embedded System Design II</a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 3DX4: Dynamic Model & Control Phys Systems</a></div>
+                                        <div class="courses"><a href="#">SFWRE NG 3F03: Machine-Level Programming</a></div>
+                                    </div>
+                                    <h4 class="terms">Fall 2014(T1)</h4>
+                                    <div class="test">
+                                        <div class="courses"><a href="#">MECHTRON 3TA4: Embedded Systems Design I</a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 3A04: SFWR DESIGN II</a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 3GA3: Computer Architecture</a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 3RA3: Software Requirement & Security </a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 3X03: Probability & Stats for Eng</a></div>
+                                    </div>
+                                    <h4 class="terms">Winter 2014(T2)</h4>
+                                    <div class="test">
+                                        <div class="courses"><a href="#">ENGINEER 3N03: Electronics Instr</a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 2C03: Data Struct & Algirithms</a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 2FA3: Discrete Math & Logic II</a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 2MX3: Math Model Of System </a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 3X03: Probability & Stats for Eng</a></div>
+                                    </div>
+
+                                    <h4 class="terms">Fall 2013(T1)</h4>
+                                    <div class="test">
+                                        <div class="courses"><a href="#">ENGINEER 2MM3: Electrical Circui & Power</a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 2DA4: Data Struct & Algirithms</a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 2DM3: Discrete Math & Logic I</a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 2S03: Math Model Of System </a></div>
+                                        <div class="courses"><a href="#">SFWR ENG 3X03: Principles Of Programming</a></div>
+                                    </div>
+
+
+                                    <h4 class="terms">Winter 2013(T2)</h4>
+                                    <div>
+                                        <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
+                                        <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
+                                        <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
+                                        <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
+                                        <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
+
+
+                                    </div>
+
+                                    <h4 class="terms">Fall 2012(T2)</h4>
+                                    <div>
+                                        <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
+                                        <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
+                                        <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
+                                        <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
+                                        <div class="courses"><a href="#">Dummy Course: Click to Go to Course Page</a></div>
+
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="d2l-clear"></div>
-                        </li>
-                    </div>
 
-                    
-
-                </div>
-                <div class="right-panel-calendar">
-                    <div class="right-panel-calendar-header">
-                        <div class="right-panel-calendar-header-text">
-                            <h4>Calendar</h4>
                         </div>
 
                     </div>
+
+                    <div class="panel-course-bottom">
+                        <div class="bottom-left">
+                            <div class="bottom-left-library-header">
+                                <div class="bottom-left-library-text">
+                                    <h4>Library</h4>
+                                </div>
+                            </div>
+
+                            <div class="bottom-left-library-pic">
+                                <div class="d2l-htmlblock">
+                                    <p></p>
+
+                                    <div align="center">
+                                        <p>
+                                            <a href="http://library.mcmaster.ca/justask"><img alt="Ask Us - Library help from anywhere - chat, email, phone or visit" src="https://library.mcmaster.ca/images/ask-library-help-whitebg.png" title="Ask Us - chat, email, phone or visit"></a>
+                                        </p>
+                                        <script src="https://server.iad.liveperson.net/hc/64904228/?cmd=mTagRepstate&amp;site=64904228&amp;buttonID=33&amp;divID=lpButDivID-1377699763&amp;bt=1&amp;c=1" type="text/javascript">
+                                            // <![CDATA[
+                                            &
+                                            nbsp;
+                                            // ]]>
+                                        </script>
+
+                                        <p><a target="_blank" href="http://library.mcmaster.ca">McMaster University Library</a> | <a href="http://library.mcmaster.ca/hours-info" target="_blank">Hours</a><br> <a href="http://hsl.mcmaster.ca" target="_blank">Health Sciences Library</a>                                            | <a href="http://hsl.mcmaster.ca/about/hours/" target="_blank">Hours</a><br> <a href="http://library.mcmaster.ca/course-reserves" target="_blank">Course Reserves</a><br> <a href="http://library.mcmaster.ca/myaccount"
+                                                target="_blank">Renew your books online</a><br>
+                                            <a href="http://www.grammarly.com" target="_blank"></a><a href="http://www.grammarly.com/edu/" target="_blank">Grammarly</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="bottom-sep">
+
+                        </div>
+
+                        <div class="bottom-right">
+                            <div class="bottom-right-store-header">
+                                <div class="bottom-right-store-text">
+                                    <h4>Campus Sotre</h4>
+                                </div>
+                            </div>
+
+                            <div class="bottom-right-store-pic">
+                                <div id="d2l_1_24_165" class="d2l-widget-content d2l_1_106_88 d2l_1_107_997 d2l_1_108_469">
+                                    <div class="d2l-htmlblock">
+                                        <p style="text-align: center;"><img src="images/campus-store-logo-connected.png" alt="campus store logo" title="campus store logo"><br> <br> <a href="https://campusstore.mcmaster.ca/information/hours.html" target="_blank">Hours for All Stores</a>                                            | <a href="https://campusstore.mcmaster.ca/information/faq/textbook-faq.html" target="_blank">FAQ </a><br><a href="https://campusstore.mcmaster.ca/cgi-mcm/ws/txhome.pl?wsgm=coursematerial" target="_blank">Build Your Customized Book List and Order Online</a>                                            <br> <a href="http://sellmytextbooks.org/members/17/" target="_blank">Selling back your books? Click on Get a Quote</a></p>
+                                        <p style="text-align: center;"></p>
+                                    </div>
+                                    <div class="d2l-clear"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="right-panel">
+                    <div class="right-panel-announcement">
+                        <div class="right-panel-announcement-header">
+                            <div class="right-panel-announcement-header-text">
+                                <h4>Announcement</h4>
+                            </div>
+                        </div>
+
+                        <div class="right-panel-announcement-content">
+                            <li class="right-panel-announcement-content-wrapper">
+                                <div class="d2l-datalist-item-content">
+                                    <h3 class="d2l-heading vui-heading-2 d2l-heading-half d2l_1_41_0">Phishing scam/attack targeted specifically at the Avenue to Learn community</h3>
+                                    <a class="d2l-imagelink d2l_1_53_949 d2l_1_114_753 vui-outline" id="d2l_1_113_598" href="javascript:void(0);" onclick="return false;" title="Dismiss Phishing scam/attack targeted specifically at the Avenue to Learn community from widget" aria-label="Dismiss Phishing scam/attack targeted specifically at the Avenue to Learn community from widget"
+                                        role="button"></a>
+                                    <div class="d2l-clear"></div>
+                                    <div class="d2l-htmlblock d2l_1_115_911">Posted Jul 15, 2016 4:02 PM</div>
+                                    <div class="d2l-clear"></div>
+                                    <div class="d2l_1_116_279">
+                                        <div class="d2l-htmlblock">
+                                            <p>There is an advanced spear-phishing attack ongoing against our community, and they’re using Avenue to learn as their bait. <br><br> The attackers have created a site that looks identical to the Avenue login
+                                                site, and baited users to go there with a password expiry notice. <br><br> Please note that the Avenue to Learn team does not ever send out emails regarding password resets, and if users are ever unsure,
+                                                please contact us at <a rel="noopener" href="mailto:support.avenue@cll.mcmaster.ca">support.avenue@cll.mcmaster.ca</a> and we'll be happy to respond to any concerns that you may have.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d2l-clear"></div>
+                            </li>
+                        </div>
+
+
+
+                    </div>
+                    <div class="right-panel-calendar">
+                        <div class="right-panel-calendar-header">
+                            <div class="right-panel-calendar-header-text">
+                                <h4>Calendar</h4>
+                            </div>
+
+                        </div>
 
 
                         <div class="right-panel-calendar-content">
-                            
+
 
                         </div>
+                    </div>
                 </div>
             </div>
+
+
+
         </div>
 
 
-
     </div>
- 
-
-</div>
 
 </body>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="css/mainPage.css" rel="stylesheet" type="text/css" />
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="js/helper.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="css/mainPage.css" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="js/helper.js"></script>
+
 </html>
