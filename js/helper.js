@@ -29,7 +29,7 @@ var app = new Vue({
 						console.log(this.profileName)
 						test = "abcdefg"
 
-    					window.location.href="mainPage.html";
+    					window.location.href="mainPage.html?name=";
 
     				} else {
 						alert("Incorrect password");
