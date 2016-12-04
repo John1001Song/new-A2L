@@ -4,13 +4,19 @@ var app = new Vue({
     data: {
         userInputName: "",
         userInputPassword: "",
+
+		profilePicLink: "",
+		profileName: "",
+
+		test: "aaaaaa"
     },
 
     methods: {
 
     	verifyUsers: function() {
     		var users = {
-    			"jack" : ["abcd", "student"]
+    			"jack" : {"Password": "1234", "Name": "Jack Zheng", "Status": "Student"},
+				"john" : {"Password": "5678", "Name": "John Song", "Status": "TA"}
     		}
 
     		if (this.userInputName == "" || this.userInputPassword == "") {
@@ -18,8 +24,13 @@ var app = new Vue({
     		} else {
     			if (users[this.userInputName] != undefined) {
     				ret = users[this.userInputName];
-    				if (this.userInputPassword == ret[0]) {
+    				if (this.userInputPassword == ret["Password"]) {
+						this.profileName = ret["Name"]
+						console.log(this.profileName)
+						test = "abcdefg"
+
     					window.location.href="mainPage.html";
+
     				} else {
 						alert("Incorrect password");
 					}
@@ -28,6 +39,11 @@ var app = new Vue({
     			}
     		}
 
-    	}
+    	},
+
+
+		displayUser: function() {
+
+		}
     }
 })
