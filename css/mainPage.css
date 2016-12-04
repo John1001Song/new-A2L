@@ -119,6 +119,7 @@
 .helper-bar {
     height: 90px;
     display: block;
+    
 }
 
 .helper-bar-icons {
@@ -152,28 +153,29 @@
 
 
 .main-panel {
-    background-color: red;
+    background-color: transparent;
     position: relative;
     min-width: 620px;
     margin: 0 auto;
     max-width: 980px;
     height: 100%;
     width: 100%;
-    table-layout: fixed;
+
 }
 
 .page-header {
     display: block;
     padding-top: 0px;
     margin-top: 0px;
-    background-color: blue;
+    margin-bottom: 0px;
+    border: 1px solid black;
     height: auto;
 }
 
 .main-panel-content {
     height: 100%;
     width: 100%;
-    table-layout: fixed;
+    margin-top: 0px;
     display: table;
 }
 
@@ -181,13 +183,45 @@
     display: table-cell;
     height: 100%;
     width: 66.6%;
-    background-color: black;
+    border: 1px solid black;
 }
 
 .right-panel {
     display: table-cell;
     height: 100%;
     width: 33.3%;
-    background-color: purple;
-    
+    border: 1px solid black;   
+}
+
+.panel-course {
+    height: 80%;
+    width: 100%;
+    border: 1px solid black; 
+}
+
+.panel-course-bottom {
+    height: 20%;
+    width: 100%;
+    border: 1px solid black;  
+    display: table;
+}
+
+.bottom-left {
+    display: table-cell;
+    height: 100%;
+    width: 50%;
+    border: 1px solid black; 
+}
+
+.bottom-right {
+    display: table-cell;
+    height: 100%;
+    width: 50%;
+    border: 1px solid black; 
+}
+
+.right-panel-announcement {
+    width: 100%;
+    height: 30%;
+    border: 1px solid black; 
 }
