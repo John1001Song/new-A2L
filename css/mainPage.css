@@ -258,6 +258,7 @@
 
 .course-header-collapse-container {
     float: left;
+    width: 100%;
 }
 
 
@@ -406,4 +407,18 @@ collapsepane-header .d2l-expandcollapse {
     border-right: 1px solid #D4D4D4;
     border-bottom: 1px solid #D4D4D4;
     border-left: 1px solid #D4D4D4;
+}
+
+.terms {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid white;
+    width: 100%;
+    background-color: #EFEFEF;
+}
+
+.courses {
+    width: 100%;
+    border-width: 0;
+    border-bottom: 1px solid #eaeaea;
+    margin-top: 5px;
 }
