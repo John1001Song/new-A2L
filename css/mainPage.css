@@ -151,5 +151,43 @@
 
 
 
+.main-panel {
+    background-color: red;
+    position: relative;
+    min-width: 620px;
+    margin: 0 auto;
+    max-width: 980px;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+}
 
+.page-header {
+    display: block;
+    padding-top: 0px;
+    margin-top: 0px;
+    background-color: blue;
+    height: auto;
+}
 
+.main-panel-content {
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    display: table;
+}
+
+.left-panel {
+    display: table-cell;
+    height: 100%;
+    width: 66.6%;
+    background-color: black;
+}
+
+.right-panel {
+    display: table-cell;
+    height: 100%;
+    width: 33.3%;
+    background-color: purple;
+    
+}
