@@ -21,7 +21,7 @@
     .course-navigation-bar-home {
         display: table-cell;
         width: 35%;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         height: inherit;
     }
     
@@ -98,28 +98,30 @@
         height: 100%;
         width: 100%;
         display: table;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
         min-width: 620px;
         margin: 10px auto;
         max-width: 980px;
+        border-spacing: 3px 0px;
     }
     
     .main-panel-left {
         width: 25%;
         display: table-cell;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
+        border-right: 2px;
     }
     
     .main-panel-right {
         width: 25%;
         display: table-cell;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
     }
     
     .main-panel-middle {
         width: 50%;
         display: table-cell;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
     }
     
     .accordion-toggle {
@@ -148,9 +150,6 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 18px;
     }
-    /*.content-browser {
-    border: 1px solid red;
-}*/
     
     .content-row {
         margin-left: 2px;
@@ -166,21 +165,6 @@
         height: 18px;
     }
     
-    .vui-list {
-        padding: 0;
-        list-style: none;
-    }
-    
-    .d2l-datalist.vui-list>.d2l-datalist-item {
-        padding: 0;
-    }
-    
-    .vui-list>li:last-child {
-        border-bottom-color: transparent;
-    }
-    
-    .vui-list>li {
-        border-width: 0;
-        border-bottom: 1px solid #eaeaea;
-        list-style: none;
+    .ui-datepicker {
+        font-size: small;
     }
