@@ -1,8 +1,7 @@
-
 #body {
     width: 100%;
     height: 100%;
-    overflow:auto;
+    overflow: auto;
 }
 
 .d2l-navigation-bar {
@@ -14,13 +13,12 @@
     left: 0px;
     display: block;
 }
+
 .d2l-navigation-bar-content {
     display: table;
     text-align: center;
     width: 100%;
 }
-
-
 
 .d2l-navigation-bar-left {
     display: table-cell;
@@ -42,10 +40,9 @@
 
 .home-pic {
     vertical-align: middle;
-
 }
 
-.home-text{
+.home-text {
     font-family: Verdana;
     font-size: 6px;
     color: white;
@@ -59,35 +56,31 @@
     text-decoration: underline;
 }
 
-
 .icons {
     /*display: inline;*/
     height: auto;
-
     float: left;
     padding-left: 40px;
-    
 }
 
-.icons > img {
+.icons>img {
     vertical-align: middle;
     margin-top: 6px;
     height: auto;
     width: 26px;
 }
 
-
-.icons > .email {
-    border-right:1px solid white;
+.icons>.email {
+    border-right: 1px solid white;
     padding-right: 5px;
 }
 
-.icons > .sticky {
-    border-right:1px solid white;
+.icons>.sticky {
+    border-right: 1px solid white;
     padding-right: 5px;
 }
 
-.icons > .bubble {
+.icons>.bubble {
     margin-right: 50px;
 }
 
@@ -99,15 +92,13 @@
     padding-left: 30px;
     border: 1px solid white;
     display: table-cell;
-
-
 }
 
-.profile::hover{
+.profile::hover {
     border-color: white;
 }
 
-.icons > .bubble {
+.icons>.bubble {
     padding-right: 5px;
 }
 
@@ -116,11 +107,9 @@
     vertical-align: middle;
 }
 
-
 .helper-bar {
     height: 90px;
     display: block;
-    
 }
 
 .helper-bar-icons {
@@ -134,13 +123,12 @@
     padding-top: 15px;
 }
 
-.d2l-navbar-area-list div{
+.d2l-navbar-area-list div {
     display: inline;
     vertical-align: middle;
 }
 
-
-.d2l-navbar-area-list li{
+.d2l-navbar-area-list li {
     display: inline;
     vertical-align: middle;
 }
@@ -150,9 +138,6 @@
     padding-right: 2px;
 }
 
-
-
-
 .main-panel {
     background-color: transparent;
     position: relative;
@@ -161,7 +146,6 @@
     max-width: 980px;
     height: 100%;
     width: 100%;
-
 }
 
 .page-header {
@@ -169,7 +153,6 @@
     padding-top: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-
     height: auto;
 }
 
@@ -191,23 +174,19 @@
     height: 100%;
     width: 34%;
     overflow: auto;
-
 }
 
 .panel-course {
     width: 100%;
-
     margin-right: 10px;
     margin-bottom: 10px;
-;
-
+    ;
 }
 
 .panel-course-bottom {
     width: 100%;
-    border: 1px solid black;  
+    border: 1px solid black;
     display: table;
-
 }
 
 .bottom-left {
@@ -223,16 +202,14 @@
     display: table-cell;
     height: 100%;
     width: 50%;
-    border: 1px solid black; 
-
+    border: 1px solid black;
 }
 
 .right-panel-announcement {
     width: 100%;
     height: auto;
-    border: 1px solid black; 
+    border: 1px solid black;
 }
-
 
 .course-header {
     background-color: #6D1A42;
@@ -244,10 +221,8 @@
 }
 
 .panel-course-contrainer {
-
     max-width: 100%;
     float: left;
-
 }
 
 .course-header-text {
@@ -261,14 +236,13 @@
     width: 100%;
 }
 
-
 .bottom-left-library-header {
     border: 1px dotted #DADBD3;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     background-color: #6D1A42;
     cursor: pointer;
-    padding: 6px 10px; 
+    padding: 6px 10px;
 }
 
 .bottom-right-store-header {
@@ -277,17 +251,13 @@
     border-top-right-radius: 3px;
     background-color: #6D1A42;
     cursor: pointer;
-    padding: 6px 10px; 
+    padding: 6px 10px;
 }
 
 .bottom-left-library-text {
     color: white;
-    
     line-height: 0.1em;
-    
-
 }
-
 
 .bottom-left-library-pic {
     padding: 7px 10px;
@@ -303,12 +273,8 @@
 
 .bottom-right-store-text {
     color: white;
-    
     line-height: 0.1em;
-    
-
 }
-
 
 .right-panel-announcement-header {
     border: 1px dotted #DADBD3;
@@ -316,7 +282,7 @@
     border-top-right-radius: 3px;
     background-color: #6D1A42;
     cursor: pointer;
-    padding: 6px 10px; 
+    padding: 6px 10px;
 }
 
 .right-panel-announcement-header-text {
@@ -324,14 +290,13 @@
     line-height: 0.1em;
 }
 
-
 .right-panel-calendar-header {
     border: 1px dotted #DADBD3;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     background-color: #6D1A42;
     cursor: pointer;
-    padding: 6px 10px; 
+    padding: 6px 10px;
 }
 
 .right-panel-calendar-header-text {
@@ -359,7 +324,6 @@
     list-style: none;
 }
 
-
 .right-panel-calendar-content {
     border-top: 0px solid transparent;
     border-right: 1px dotted #DADBD3;
@@ -370,9 +334,6 @@
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
 }
-
-
-
 
 .d2l_1_143_508 {
     border: 1px solid #D4D4D4;
@@ -421,4 +382,8 @@ collapsepane-header .d2l-expandcollapse {
     border-width: 0;
     border-bottom: 1px solid #eaeaea;
     margin-top: 5px;
+}
+
+.helper-bar-icon {
+    height: 20px;
 }
