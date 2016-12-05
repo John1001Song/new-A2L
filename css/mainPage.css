@@ -146,6 +146,7 @@
     max-width: 980px;
     height: 100%;
     width: 100%;
+    border-spacing: 5px 0px;
 }
 
 .page-header {
@@ -179,13 +180,12 @@
 .panel-course {
     width: 100%;
     margin-right: 10px;
-    margin-bottom: 10px;
-    ;
+    margin-bottom: 20px;
 }
 
 .panel-course-bottom {
     width: 100%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     display: table;
 }
 
@@ -195,6 +195,7 @@
     width: 50%;
     border: 0px solid transparent;
     border-radius: 3px;
+    margin-top: 10px;
     margin-bottom: 3px;
 }
 
@@ -202,13 +203,13 @@
     display: table-cell;
     height: 100%;
     width: 50%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 .right-panel-announcement {
     width: 100%;
     height: auto;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 .course-header {
@@ -232,6 +233,8 @@
 }
 
 .course-header-collapse-container {
+    margin-top: 5px;
+    margin-left: -10px;
     float: left;
     width: 100%;
 }
@@ -372,7 +375,7 @@ collapsepane-header .d2l-expandcollapse {
 
 .terms {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 1px solid white;
+    /*border: 1px solid black;*/
     width: 100%;
     background-color: #EFEFEF;
 }
@@ -384,6 +387,14 @@ collapsepane-header .d2l-expandcollapse {
     margin-top: 5px;
 }
 
+.courses:hover {
+    background-color: silver;
+}
+
 .helper-bar-icon {
     height: 20px;
+}
+
+.ui-accordion-header.ui-state-active {
+    background: #d3d3d3;
 }

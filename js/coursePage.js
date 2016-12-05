@@ -1,15 +1,4 @@
-// $(document).read(function() {
-//     $('.instructor-accordion-toggle').on('click', function(event) {
-//         event.preventDefault();
 
-//         var accordion = $(this);
-//         var accordionContent = accordion.next('instructor-accordion-content');
-
-
-//         accordion.toggleClass("open");
-//         accordionContent.slideToggle(250);
-//     });
-// });
 
 
 
